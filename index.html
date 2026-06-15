@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Pereira — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">CP</div>
+    <ul class="nav__links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#experience">Experiência</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#skills">Competências</a></li>
+      <li><a href="#education">Educação</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <button class="nav__lang" id="lang-toggle" aria-label="Switch language">
+      <img class="nav__lang-flag" id="lang-flag" src="assets/BandeiraInglaterra.png" alt="EN" />
+      <span id="lang-label">EN</span>
+    </button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__greeting reveal" data-i18n-hero="greeting">Olá, sou o</p>
+      <h1 class="hero__name reveal">Carlos Pereira</h1>
+      <h2 class="hero__role reveal" data-i18n-hero="role">Software Developer</h2>
+      <p class="hero__tagline reveal" data-i18n-hero="tagline">Java · Python · Kotlin · SQL · HTML · CSS</p>
+      <div class="hero__cta reveal">
+        <a href="#projects" class="btn btn--primary" data-i18n-hero="viewWork">Ver Projetos</a>
+        <a href="#contact" class="btn btn--ghost" data-i18n-hero="getInTouch">Entrar em Contacto</a>
+      </div>
+    </div>
+    <div class="hero__bg">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n-section="about">Sobre</h2>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p data-i18n-about="p1">Programador Software Junior com grande interesse na arquitetura de projetos, com mais de 3 projetos full stack no meu portefólio, com foco em código e arquitetura escalável e modular. Atualmente focado em melhorar o seu conhecimento de tecnologias e resolução de problemas.</p>
+          <p data-i18n-about="p2">Procuro uma oportunidade para poder contribuir imediatamente com as minhas competências e evoluir as minhas capacidades.</p>
+        </div>
+        <div class="about__image reveal">
+          <!-- <img src="assets/photo.jpg" alt="Carlos Pereira" /> -->
+          <div class="about__placeholder">Photo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n-section="experience">Experiência</h2>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date" data-i18n-exp="proj1date">Em desenvolvimento</span>
+            <h3 class="timeline__role" data-i18n-exp="proj1title">Projetos Full Stack Pessoais</h3>
+            <span class="timeline__company" data-i18n-exp="proj1company">Portfolio Independente</span>
+            <ul class="timeline__bullets">
+              <li data-i18n-exp="proj1b1">Desenvolvimento de mais de 3 aplicações full stack do zero</li>
+              <li data-i18n-exp="proj1b2">Foco em arquitetura escalável, modular e código limpo</li>
+              <li data-i18n-exp="proj1b3">Utilização de Java, Python, Kotlin, SQL, HTML e CSS</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n-section="projects">Projetos</h2>
+      <div class="projects__grid">
+
+        <!-- GadoApp -->
+        <article class="card reveal">
+          <div class="card__header">
+            <span class="card__icon">⬡</span>
+            <div class="card__links">
+              <a href="pagina de informações" target="_blank" rel="noopener">Saber Mais</a>
+            </div>
+          </div>
+          <h3 class="card__title" data-i18n-proj="p1title">GadoApp</h3>
+          <p class="card__desc" data-i18n-proj="p1desc">Sistema full-stack de gestão de explorações bovinas com arquitetura multi-cliente: desktop JavaFX, REST API Spring Boot, app Android em React Native e página web. Inclui autenticação JWT, multi-tenancy, 60+ entidades JPA e geração de relatórios PDF.</p>
+          <ul class="card__tags">
+            <li>Java 17</li>
+            <li>Spring Boot</li>
+            <li>JavaFX</li>
+            <li>React Native</li>
+            <li>MySQL</li>
+            <li>JWT</li>
+          </ul>
+        </article>
+
+        <!-- RealGames -->
+        <article class="card reveal">
+          <div class="card__header">
+            <span class="card__icon">⬡</span>
+            <div class="card__links">
+              <a href="https://github.com/TiagoSantos155/Os_Verdadeiros_LAD_Project" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <h3 class="card__title" data-i18n-proj="p2title">RealGames</h3>
+          <p class="card__desc" data-i18n-proj="p2desc">Plataforma web de recomendação de jogos personalizada com Machine Learning (SVD, Random Forest, SVM). Inclui sistema de avaliações, biblioteca pessoal e dashboard de analytics para developers.</p>
+          <ul class="card__tags">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>scikit-learn</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <!-- Visão por Computador -->
+        <article class="card reveal">
+          <div class="card__header">
+            <span class="card__icon">⬡</span>
+            <div class="card__links">
+              <a href="https://github.com/CarlosJFCPereira/Visao-Por-Computador" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <h3 class="card__title" data-i18n-proj="p3title">Parking Space CNN</h3>
+          <p class="card__desc" data-i18n-proj="p3desc">Rede neuronal convolucional (CNN) que classifica lugares de estacionamento como ocupados ou livres, treinada com imagens reais em condições meteorológicas variadas (sol, nuvens, chuva).</p>
+          <ul class="card__tags">
+            <li>Python</li>
+            <li>TensorFlow</li>
+            <li>Keras</li>
+            <li>scikit-learn</li>
+            <li>Deep Learning</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n-section="skills">Competências</h2>
+      <div class="skills__groups">
+
+        <div class="skills__group reveal">
+          <h3 class="skills__category" data-i18n-skills="lang">Linguagens</h3>
+          <ul class="skills__list">
+            <li class="skill-badge">Java</li>
+            <li class="skill-badge">Python</li>
+            <li class="skill-badge">Kotlin</li>
+            <li class="skill-badge">SQL</li>
+            <li class="skill-badge">HTML</li>
+            <li class="skill-badge">CSS</li>
+          </ul>
+        </div>
+
+        <div class="skills__group reveal">
+          <h3 class="skills__category" data-i18n-skills="tools">Ferramentas &amp; Outros</h3>
+          <ul class="skills__list">
+            <li class="skill-badge">Android Studio</li>
+            <li class="skill-badge">Spring Boot</li>
+            <li class="skill-badge">TensorFlow</li>
+            <li class="skill-badge">Git</li>
+            <li class="skill-badge">MySQL</li>
+            <li class="skill-badge">Maven</li>
+          </ul>
+        </div>
+
+        <div class="skills__group reveal">
+          <h3 class="skills__category" data-i18n-skills="soft">Soft Skills</h3>
+          <ul class="skills__list">
+            <li class="skill-badge" data-i18n-softskill="s1">Resolução de Problemas</li>
+            <li class="skill-badge" data-i18n-softskill="s2">Trabalho em Equipa</li>
+            <li class="skill-badge" data-i18n-softskill="s3">Aprendizagem Rápida</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section__title reveal" data-i18n-section="education">Educação</h2>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date" data-i18n-edu="date">2022 – Presente</span>
+            <h3 class="timeline__role" data-i18n-edu="degree">A tirar licenciatura em Engenharia Informática</h3>
+            <span class="timeline__company">Universidade Portucalense Infante D. Henriques</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container container--narrow">
+      <h2 class="section__title reveal" data-i18n-section="contact">Entrar em Contacto</h2>
+      <p class="contact__sub reveal" data-i18n-contact="sub">Disponível para oportunidades, colaborações e novos desafios.</p>
+      <div class="contact__links reveal">
+        <a href="mailto:CarlosJFCPereira@proton.me" class="contact__item">
+          <span class="contact__label">Email</span>
+          <span class="contact__value">CarlosJFCPereira@proton.me</span>
+        </a>
+        <a href="https://github.com/CarlosJFCPereira" class="contact__item" target="_blank" rel="noopener">
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">CarlosJFCPereira</span>
+        </a>
+        <a href="https://www.linkedin.com/in/carlos-pereira-7688622b1/" class="contact__item" target="_blank" rel="noopener">
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">carlos-pereira-7688622b1</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p><span data-i18n-footer>Feito por</span> Carlos Pereira · <span id="year"></span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

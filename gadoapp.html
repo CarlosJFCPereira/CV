@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GadoApp — Carlos Pereira</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/project.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo"><a href="index.html" style="color:inherit">CP</a></div>
+    <ul class="nav__links">
+      <li><a href="index.html#about">Sobre</a></li>
+      <li><a href="index.html#projects">Projetos</a></li>
+      <li><a href="index.html#contact">Contacto</a></li>
+    </ul>
+    <a href="index.html#projects" class="btn btn--ghost" style="font-size:0.8rem;padding:6px 14px">← Voltar</a>
+  </nav>
+
+  <!-- HERO DO PROJETO -->
+  <section class="proj-hero">
+    <div class="container">
+      <p class="proj-hero__label">Projeto em Destaque</p>
+      <h1 class="proj-hero__title">GadoApp</h1>
+      <p class="proj-hero__sub">Sistema de Gestão de Explorações Bovinas</p>
+      <div class="proj-hero__tags">
+        <span class="skill-badge">Java 17</span>
+        <span class="skill-badge">Spring Boot</span>
+        <span class="skill-badge">JavaFX</span>
+        <span class="skill-badge">React Native</span>
+        <span class="skill-badge">MySQL</span>
+        <span class="skill-badge">JWT</span>
+        <span class="skill-badge">Maven</span>
+        <span class="skill-badge">OpenPDF</span>
+      </div>
+    </div>
+    <div class="hero__bg">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+    </div>
+  </section>
+
+  <!-- CITAÇÃO PESSOAL -->
+  <section class="section">
+    <div class="container container--narrow">
+      <blockquote class="proj-quote">
+        <p>Este projeto foi, de longe, o mais desafiador que já construí. Exigiu que pusesse em prática tudo o que aprendi ao longo destes anos — arquitetura de software, segurança, bases de dados, interfaces gráficas e desenvolvimento mobile — tudo ao mesmo tempo, num único sistema coeso. Não é um exercício académico nem um tutorial seguido à letra: é software real, pensado para resolver um problema real. É o projeto do qual mais me orgulho como programador e acredito que demonstra claramente as minhas capacidades de desenho e construção de sistemas complexos.</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- O QUE É -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">O que é o GadoApp?</h2>
+      <div class="proj-overview">
+        <p>O GadoApp é um sistema completo de gestão de explorações bovinas desenvolvido de raiz, com uma arquitetura <strong>multi-cliente e multi-tenant</strong>. Um único backend serve simultaneamente uma aplicação desktop JavaFX, uma app Android em React Native e uma página web estática — todos autenticados via JWT.</p>
+        <p>O sistema cobre o ciclo de vida completo de uma exploração: desde o registo de cada animal e a sua genealogia, passando pelo acompanhamento reprodutivo (inseminações, gravidezes, partos), saúde podal, gestão financeira e geração automática de eventos de calendário.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Dimensão do Projeto</h2>
+
+      <!-- Números rápidos -->
+      <div class="proj-stats">
+        <div class="proj-stat">
+          <span class="proj-stat__value">~40 000</span>
+          <span class="proj-stat__label">Linhas de código</span>
+        </div>
+        <div class="proj-stat">
+          <span class="proj-stat__value">~300</span>
+          <span class="proj-stat__label">Ficheiros totais</span>
+        </div>
+        <div class="proj-stat">
+          <span class="proj-stat__value">264</span>
+          <span class="proj-stat__label">Ficheiros Java</span>
+        </div>
+        <div class="proj-stat">
+          <span class="proj-stat__value">70+</span>
+          <span class="proj-stat__label">Tabelas SQL</span>
+        </div>
+        <div class="proj-stat">
+          <span class="proj-stat__value">9</span>
+          <span class="proj-stat__label">Tipos de relatórios automatizados para PDF</span>
+        </div>
+      </div>
+
+      <!-- Tabelas detalhadas -->
+      <div class="stats-tables">
+        <div class="stats-table-wrap">
+          <h3 class="stats-table-title">Por tipo de ficheiro</h3>
+          <table class="proj-table">
+            <thead><tr><th>Tipo</th><th>Ficheiros</th></tr></thead>
+            <tbody>
+              <tr><td>Java</td><td>264</td></tr>
+              <tr><td>FXML</td><td>52</td></tr>
+              <tr><td>SQL</td><td>9</td></tr>
+              <tr><td>CSS</td><td>3</td></tr>
+              <tr><td>Properties / YAML</td><td>8</td></tr>
+              <tr class="stats-table-total"><td><strong>Total</strong></td><td><strong>336</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="stats-table-wrap">
+          <h3 class="stats-table-title">Por módulo (código Java)</h3>
+          <table class="proj-table">
+            <thead><tr><th>Categoria</th><th>Ficheiros</th><th>O que contém</th></tr></thead>
+            <tbody>
+              <tr><td>DTOs</td><td>67</td><td>Objetos de transferência de dados, requests, enums partilhados</td></tr>
+              <tr><td>Controllers (View)</td><td>31</td><td>Controllers JavaFX do cliente — ecrãs e formulários</td></tr>
+              <tr><td>Controllers (API)</td><td>23</td><td>REST controllers do servidor</td></tr>
+              <tr><td>Models</td><td>50</td><td>Entidades JPA do servidor</td></tr>
+              <tr><td>Services</td><td>41</td><td>Lógica de negócio</td></tr>
+              <tr><td>Repositories</td><td>35</td><td>Interfaces Spring Data JPA</td></tr>
+              <tr><td>Security</td><td>6</td><td>JWT, filtros de autenticação, Spring Security</td></tr>
+              <tr><td>App / Config</td><td>4</td><td>Main, SceneManager, Session, configurações</td></tr>
+              <tr><td>Testes</td><td>7</td><td>Testes de integração de permissões e outros</td></tr>
+              <tr class="stats-table-total"><td><strong>Total</strong></td><td><strong>264</strong></td><td></td></tr>
+            </tbody>
+          </table>
+          <p class="stats-note">A fatia maior (67 DTOs) é natural num projeto com módulo partilhado — cada funcionalidade nova gera pelo menos 1–2 DTOs novos.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ARQUITETURA -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Arquitetura</h2>
+      <div class="proj-arch">
+        <div class="proj-arch__diagram">
+<pre class="proj-diagram">
+┌──────────────────┐   HTTP/REST + JWT   ┌──────────────────┐
+│  Cliente JavaFX  │ ◄─────────────────► │  Spring Boot API │
+│  (ApiClient)     │                     │  (porta 8080)    │
+└──────────────────┘                     └────────┬─────────┘
+                                                  │ JPA
+┌──────────────────┐                     ┌────────▼─────────┐
+│  App Android     │ ◄─────────────────► │  MySQL (XAMPP)   │
+│  (React Native)  │   HTTP/REST + JWT   │  gestao_gado     │
+└──────────────────┘                     └──────────────────┘
+</pre>
+        </div>
+        <div class="proj-arch__table">
+          <table class="proj-table">
+            <thead><tr><th>Módulo</th><th>Tecnologia</th></tr></thead>
+            <tbody>
+              <tr><td>Desktop (UI)</td><td>Java 17 + JavaFX 20.0.2</td></tr>
+              <tr><td>Backend (API)</td><td>Spring Boot 3.3.3 + Spring Security + JWT</td></tr>
+              <tr><td>DTOs partilhados</td><td>Módulo Maven <code>gadoapp-common</code></td></tr>
+              <tr><td>Base de dados</td><td>MySQL 8.0 via XAMPP</td></tr>
+              <tr><td>App móvel</td><td>React Native 0.85 (TypeScript)</td></tr>
+              <tr><td>Relatórios</td><td>OpenPDF 1.3.30</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Funcionalidades</h2>
+      <div class="proj-features">
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">🐄</div>
+          <h3>Gestão de Animais</h3>
+          <p>Registo completo de cada bovino — identificação, genealogia, raça e estado reprodutivo. Base de dados com 70+ tabelas e 60+ entidades JPA.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">🧬</div>
+          <h3>Reprodução</h3>
+          <p>Acompanhamento do ciclo reprodutivo completo: inseminações, confirmação de gravidez, partos e períodos de espera, com geração automática de eventos.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">🦶</div>
+          <h3>Saúde Podal</h3>
+          <p>Avaliações por pata, registo de problemas e tratamentos, histórico veterinário por animal.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">💶</div>
+          <h3>Financeiro</h3>
+          <p>Movimentos de receitas e custos com categorias, subcategorias, resumos mensais e médias móveis de 3 meses.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">📅</div>
+          <h3>Calendário Inteligente</h3>
+          <p>Geração automática de eventos críticos: testes de gravidez, partos previstos, secagens e reavaliações podais.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">🔐</div>
+          <h3>Segurança Granular</h3>
+          <p>Autenticação JWT com 5 roles predefinidos e permissões por módulo (VACAS, REPRODUÇÃO, CASCOS, FINANCEIRO, STAFF) e ação (READ / CREATE / UPDATE / DELETE), aplicadas em 33 endpoints.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">🏢</div>
+          <h3>Multi-Tenancy</h3>
+          <p>Suporte a múltiplas explorações por utilizador. Um funcionário pode ter roles completamente independentes em cada exploração.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">📄</div>
+          <h3>Relatórios PDF</h3>
+          <p>Exportação de 9 tipos de relatórios diretamente no cliente: fichas de animais, histórico reprodutivo, registos veterinários e financeiros.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">📱</div>
+          <h3>App Android</h3>
+          <p>Módulo financeiro e gestão de anexos com câmara, desenvolvido em React Native com TypeScript.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">📜</div>
+          <h3>Audit Log Imutável</h3>
+          <p>Registo permanente de todas as operações de escrita no sistema — quem fez o quê e quando.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">⚡</div>
+          <h3>Instalação Automatizada</h3>
+          <p>Script Windows <code>INSTALAR.bat</code> com 8 passos: instala dependências, clona o repositório, cria a base de dados e compila todos os módulos Maven sem intervenção manual.</p>
+        </div>
+
+        <div class="proj-feature-card">
+          <div class="proj-feature-icon">🔗</div>
+          <h3>Módulo Comum Maven</h3>
+          <p>DTOs e enums partilhados entre servidor e clientes num módulo dedicado <code>gadoapp-common</code>, garantindo consistência de tipos sem duplicação de código.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTEMA DE PERMISSÕES -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">O Problema das Permissões — e Como o Resolvemos</h2>
+
+      <!-- Problema -->
+      <div class="perm-problem">
+        <div class="perm-label perm-label--problem">O Problema</div>
+        <p>Um utilizador pode estar associado a várias explorações em simultâneo, com roles completamente diferentes em cada uma — por exemplo, Veterinário numa vacaria e Tratador de Cascos noutra.</p>
+        <p>O cliente JavaFX tratava as permissões como globais ao utilizador. Quando alguém iniciava sessão, o cliente não sabia em que exploração estava a operar e aplicava as permissões erradas, mostrando ou ocultando funcionalidades de forma incorreta.</p>
+      </div>
+
+      <!-- Solução — 4 passos verticais -->
+      <div class="perm-solution">
+        <div class="perm-label perm-label--solution">A Solução</div>
+        <p class="perm-solution__intro">Tornar as permissões contextuais à exploração selecionada, em vez de globais ao utilizador. Quatro peças que trabalham em conjunto:</p>
+
+        <div class="perm-steps">
+          <div class="perm-step">
+            <div class="perm-step__num">1</div>
+            <div class="perm-step__body">
+              <strong>Endpoint dedicado no servidor</strong>
+              <p>O servidor expõe um endpoint que devolve a matriz completa de permissões para aquela exploração específica, incluindo as flags de administrador e de proprietário.</p>
+            </div>
+          </div>
+          <div class="perm-step">
+            <div class="perm-step__num">2</div>
+            <div class="perm-step__body">
+              <strong>Cache local por sessão</strong>
+              <p>Ao selecionar uma exploração, o cliente carrega as permissões dessa vacaria e guarda-as em cache. Cada verificação de acesso consulta sempre esta cache local — sem pedidos extra ao servidor.</p>
+            </div>
+          </div>
+          <div class="perm-step">
+            <div class="perm-step__num">3</div>
+            <div class="perm-step__body">
+              <strong>Fallback seguro</strong>
+              <p>Se o servidor não responder, o sistema assume zero permissões por defeito — princípio do menor privilégio. Um aviso aparece na barra de navegação.</p>
+            </div>
+          </div>
+          <div class="perm-step">
+            <div class="perm-step__num">4</div>
+            <div class="perm-step__body">
+              <strong>UI reativa</strong>
+              <p>O menu principal oculta completamente os módulos sem permissão. As listagens desativam os botões de editar e eliminar se o utilizador não tiver as ações correspondentes naquele módulo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="perm-key">
+          A chave foi simples mas não óbvia: as permissões são sempre pedidas com o identificador da exploração atual. Mudar de exploração força um novo pedido ao servidor — e o cliente reconstrói o estado de permissões do zero.
+        </div>
+      </div>
+
+      <!-- Resultado -->
+      <div class="perm-result">
+        <div class="perm-result__icon">✓</div>
+        <div class="perm-result__body">
+          <strong>O resultado desta abordagem</strong>
+          <p>Roles completamente modulares e independentes por exploração. Adicionar uma nova permissão ou um novo módulo é uma alteração de uma linha — o sistema propaga automaticamente para a UI de todos os clientes. Resolver o problema desta forma tornou o sistema extensível sem tocar na lógica de autenticação existente.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CÓDIGO PRIVADO -->
+  <section class="section">
+    <div class="container container--narrow" style="text-align:center">
+      <h2 class="section__title">Código fonte</h2>
+      <div class="proj-private">
+        <div class="proj-private__icon">🔒</div>
+        <p>O código fonte deste projeto não está disponível publicamente. O sistema contém dados sensiveis e lógica de negócio sensível — a sua divulgação comprometeria a segurança da aplicação.</p>
+        <p>Se for recrutador ou estiver a avaliar o meu trabalho e quiser saber mais, pode instalar as aplicações no site a baixo, sobre a implementação, fico disponível para demonstrar o sistema em funcionamento ou discutir a arquitetura e decisões técnicas em detalhe.</p>
+        <a href="https://carlosjfcpereira.github.io/adifal-website/" class="btn btn--primary" style="margin-top:1.5rem">Link</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Carlos Pereira · <span id="year"></span></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+  </script>
+</body>
+</html>
